@@ -1,0 +1,14 @@
+target 'Songs-iTunes' do
+  use_frameworks!
+
+  pod 'Alamofire', '~> 5.2'
+  pod 'ReSwift'
+
+  target 'Songs-iTunesTests' do
+    inherit! :search_paths
+  end
+
+  target 'Songs-iTunesUITests' do
+  end
+
+end
