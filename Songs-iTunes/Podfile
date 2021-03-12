@@ -1,8 +1,17 @@
 target 'Songs-iTunes' do
   use_frameworks!
 
+  # Networking pods
   pod 'Alamofire', '~> 5.2'
+  
+  # Redux pods
   pod 'ReSwift'
+  pod 'ReSwiftThunk'
+
+  # Reactive pods
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'RxKeyboard'
 
   target 'Songs-iTunesTests' do
     inherit! :search_paths
