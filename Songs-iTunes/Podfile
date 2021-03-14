@@ -4,14 +4,9 @@ target 'Songs-iTunes' do
   # Networking pods
   pod 'Alamofire', '~> 5.2'
   
-  # Redux pods
-  pod 'ReSwift'
-  pod 'ReSwiftThunk'
-
-  # Reactive pods
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
-  pod 'RxKeyboard'
+  # UI pods
+  pod 'MaterialComponents/Chips'
+  pod 'SnapKit', '~> 5.0.0'
 
   target 'Songs-iTunesTests' do
     inherit! :search_paths

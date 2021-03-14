@@ -16,13 +16,11 @@
 		632FBBA325F8D78400CC4C8A /* Songs_iTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FBBA225F8D78400CC4C8A /* Songs_iTunesUITests.swift */; };
 		6338A50325FA1EF80055E722 /* TrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A50225FA1EF80055E722 /* TrackCollectionViewCell.swift */; };
 		6338A50825FA20780055E722 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A50725FA20780055E722 /* Track.swift */; };
-		6338A52325FA83560055E722 /* TrackListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A52225FA83560055E722 /* TrackListState.swift */; };
-		6338A52B25FA83B10055E722 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A52A25FA83B10055E722 /* MainState.swift */; };
-		6338A53125FA84A80055E722 /* MainStateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A53025FA84A80055E722 /* MainStateAction.swift */; };
 		6338A55025FA9DD10055E722 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A54F25FA9DD10055E722 /* Genre.swift */; };
 		6338A55525FAA2360055E722 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A55425FAA2360055E722 /* Search.swift */; };
 		6338A55A25FB50AF0055E722 /* AppleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A55925FB50AF0055E722 /* AppleResponse.swift */; };
 		6338A5B025FB61000055E722 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338A5AF25FB61000055E722 /* Feed.swift */; };
+		638F761425FEA18E0095B4F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 638F761625FEA18E0095B4F6 /* Localizable.strings */; };
 		86D4EAF67890B4D03CF69020 /* Pods_Songs_iTunes_Songs_iTunesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C52FDBD8C6B76A1A458638 /* Pods_Songs_iTunes_Songs_iTunesUITests.framework */; };
 		8E313BED02E772AA5B5A9D16 /* Pods_Songs_iTunesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD95B721B1CC6E5FAC1DE8C /* Pods_Songs_iTunesTests.framework */; };
 		EB9AF0743D8AB8880B25CBB8 /* Pods_Songs_iTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC0F523E3A320898F153671 /* Pods_Songs_iTunes.framework */; };
@@ -66,13 +64,12 @@
 		632FBBA425F8D78400CC4C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6338A50225FA1EF80055E722 /* TrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewCell.swift; sourceTree = "<group>"; };
 		6338A50725FA20780055E722 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		6338A52225FA83560055E722 /* TrackListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListState.swift; sourceTree = "<group>"; };
-		6338A52A25FA83B10055E722 /* MainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
-		6338A53025FA84A80055E722 /* MainStateAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStateAction.swift; sourceTree = "<group>"; };
 		6338A54F25FA9DD10055E722 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		6338A55425FAA2360055E722 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		6338A55925FB50AF0055E722 /* AppleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleResponse.swift; sourceTree = "<group>"; };
 		6338A5AF25FB61000055E722 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		638F761525FEA18E0095B4F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		638F761725FEA1A40095B4F6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7787C3D2DD2D9CA01C6FA26B /* Pods-Songs-iTunesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Songs-iTunesTests.debug.xcconfig"; path = "Target Support Files/Pods-Songs-iTunesTests/Pods-Songs-iTunesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE325EEE7646BDCA789FCE3D /* Pods-Songs-iTunes-Songs-iTunesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Songs-iTunes-Songs-iTunesUITests.release.xcconfig"; path = "Target Support Files/Pods-Songs-iTunes-Songs-iTunesUITests/Pods-Songs-iTunes-Songs-iTunesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B1804F221A97385D72C0CDC2 /* Pods-Songs-iTunesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Songs-iTunesTests.release.xcconfig"; path = "Target Support Files/Pods-Songs-iTunesTests/Pods-Songs-iTunesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +131,6 @@
 			children = (
 				6338A4FD25FA1C510055E722 /* models */,
 				6338A4FE25FA1C5D0055E722 /* services */,
-				6338A52F25FA848E0055E722 /* actions */,
-				6338A52125FA83370055E722 /* states */,
 				6338A4F225FA18BE0055E722 /* views */,
 				6338A4F325FA18DF0055E722 /* controllers */,
 				6338A4F125FA186B0055E722 /* assets */,
@@ -176,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				632FBB8925F8D78300CC4C8A /* Assets.xcassets */,
+				638F761625FEA18E0095B4F6 /* Localizable.strings */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -214,23 +210,6 @@
 				6338A55425FAA2360055E722 /* Search.swift */,
 			);
 			path = services;
-			sourceTree = "<group>";
-		};
-		6338A52125FA83370055E722 /* states */ = {
-			isa = PBXGroup;
-			children = (
-				6338A52225FA83560055E722 /* TrackListState.swift */,
-				6338A52A25FA83B10055E722 /* MainState.swift */,
-			);
-			path = states;
-			sourceTree = "<group>";
-		};
-		6338A52F25FA848E0055E722 /* actions */ = {
-			isa = PBXGroup;
-			children = (
-				6338A53025FA84A80055E722 /* MainStateAction.swift */,
-			);
-			path = actions;
 			sourceTree = "<group>";
 		};
 		FA155C45740ADBD5936C8F0A /* Frameworks */ = {
@@ -346,6 +325,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 632FBB7425F8D78000CC4C8A;
 			productRefGroup = 632FBB7E25F8D78000CC4C8A /* Products */;
@@ -365,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632FBB8D25F8D78300CC4C8A /* LaunchScreen.storyboard in Resources */,
+				638F761425FEA18E0095B4F6 /* Localizable.strings in Resources */,
 				632FBB8A25F8D78300CC4C8A /* Assets.xcassets in Resources */,
 				632FBB8825F8D78000CC4C8A /* Main.storyboard in Resources */,
 			);
@@ -499,12 +480,9 @@
 				6338A50825FA20780055E722 /* Track.swift in Sources */,
 				6338A55025FA9DD10055E722 /* Genre.swift in Sources */,
 				6338A55525FAA2360055E722 /* Search.swift in Sources */,
-				6338A53125FA84A80055E722 /* MainStateAction.swift in Sources */,
 				632FBB8525F8D78000CC4C8A /* SearchViewController.swift in Sources */,
-				6338A52325FA83560055E722 /* TrackListState.swift in Sources */,
 				6338A50325FA1EF80055E722 /* TrackCollectionViewCell.swift in Sources */,
 				632FBB8125F8D78000CC4C8A /* AppDelegate.swift in Sources */,
-				6338A52B25FA83B10055E722 /* MainState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +534,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		638F761625FEA18E0095B4F6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				638F761525FEA18E0095B4F6 /* en */,
+				638F761725FEA1A40095B4F6 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -563,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -624,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

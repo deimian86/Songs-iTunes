@@ -4,7 +4,8 @@ class Track : Codable {
 
     let id: String?
     let title: String
-    let collectionName: String?
+    let artistName: String
+    let collectionName: String
     let releaseDate: String?
     let copyright: String?
     let artistUrl: String?
@@ -15,6 +16,7 @@ class Track : Codable {
     private enum CodingKeys: String, CodingKey {
         case id
         case title = "name"
+        case artistName
         case collectionName
         case releaseDate
         case copyright
@@ -24,9 +26,10 @@ class Track : Codable {
         case genres
     }
     
-    init(id: String, title: String, collectionName: String, releaseDate: String, copyright: String, artistUrl: String, artworkUrl: String, url: String, genres: [Genre]) {
+    init(id: String, title: String, artistName: String, collectionName: String, releaseDate: String, copyright: String, artistUrl: String, artworkUrl: String, url: String, genres: [Genre]) {
         self.id = id
         self.title = title
+        self.artistName = artistName
         self.collectionName = collectionName
         self.releaseDate = releaseDate
         self.copyright = copyright
