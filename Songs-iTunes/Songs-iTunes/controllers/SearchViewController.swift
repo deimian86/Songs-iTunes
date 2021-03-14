@@ -20,6 +20,11 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         super.viewDidLoad()
         self.searchTop100()
         self.initChipsView()
+        self.initSearchBar()
+    }
+    
+    func initSearchBar() {
+        self.searchBar.placeholder = NSLocalizedString("buscar", comment: "")
     }
     
     func initChipsView() {
