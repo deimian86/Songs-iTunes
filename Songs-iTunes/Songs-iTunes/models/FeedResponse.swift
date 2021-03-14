@@ -1,6 +1,6 @@
 import Foundation
 
-class AppleResponse: Codable {
+class FeedResponse: Codable {
     
     let feed: Feed
     

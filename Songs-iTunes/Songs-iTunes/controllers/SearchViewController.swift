@@ -50,7 +50,8 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     @IBAction func search(_ sender: UIView) {
-        if(sender.tag == -1) {
+        print(sender.tag)
+        if(sender.tag == 0) {
             self.searchTop100()
         } else {
             self.searchByTerm(term: arraySearchTerms[sender.tag])
@@ -58,7 +59,11 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func searchByTerm(term: String) {
-        print(term)
+        Search.searchByTerm(term: term, completion: { arrayTracks in
+            self.arrayTracks = arrayTracks
+            self.arrayTracksFiltered = arrayTracks
+            self.trackCollectionView.reloadData()
+        })
     }
         
     func searchTop100() {
@@ -77,7 +82,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
        
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "trackCell", for: indexPath as IndexPath) as! TrackCollectionViewCell
-        cell.nameLabel.text = self.arrayTracksFiltered[indexPath.row].title
+        cell.nameLabel.text = self.arrayTracksFiltered[indexPath.row].getTitle()
         cell.imageView.image = nil
         DispatchQueue.global(qos: .background).async {
             guard let strUrl = self.arrayTracksFiltered[indexPath.row].artworkUrl else { return }
@@ -93,7 +98,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     // MARK: - UICollectionViewDelegate
        
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let url = URL(string: self.arrayTracksFiltered[indexPath.item].url!) else { return }
+        guard let url = URL(string: self.arrayTracksFiltered[indexPath.item].getUrl()!) else { return }
         UIApplication.shared.open(url)
     }
     
@@ -119,9 +124,10 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         self.trackCollectionView.reloadData()
     }
     
+    
     func checkFilters(item: Track) -> Bool {
-        if (item.title.lowercased().contains(searchBar.text!.lowercased())) {
-            return true;
+        if (item.getTitle()!.lowercased().contains(searchBar.text!.lowercased())) {
+           return true;
         }
         if (item.collectionName.lowercased().contains(searchBar.text!.lowercased())) {
             return true;
