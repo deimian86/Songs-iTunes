@@ -15,6 +15,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
 
     var scrollView: UIScrollView!
     var stackView: UIStackView!
+    var arrayChips: [MDCChipView] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,16 +51,23 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
             chipView.tag = tagCount
             chipView.addTarget(self, action: #selector(search), for: .touchUpInside)
             stackView.addArrangedSubview(chipView)
+            arrayChips.append(chipView)
             tagCount+=1
         }
     }
     
-    @IBAction func search(_ sender: UIView) {
-        print(sender.tag)
+    @IBAction func search(_ sender: MDCChipView) {
+        self.setChipSelection(tag: sender.tag)
         if(sender.tag == 0) {
             self.searchTop100()
         } else {
             self.searchByTerm(term: arraySearchTerms[sender.tag])
+        }
+    }
+    
+    func setChipSelection(tag: Int) {
+        for chip in arrayChips {
+            chip.isSelected = (chip.tag == tag)
         }
     }
     

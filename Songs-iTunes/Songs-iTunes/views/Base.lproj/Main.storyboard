@@ -42,15 +42,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="track" translatesAutoresizingMaskIntoConstraints="NO" id="TUc-Do-u9r">
-                                                    <rect key="frame" x="15" y="0.0" width="110" height="110"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6T4-6f-t2z" userLabel="OuterView">
+                                                    <rect key="frame" x="15" y="10" width="110" height="110"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="track" translatesAutoresizingMaskIntoConstraints="NO" id="TUc-Do-u9r">
+                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="110" id="LpB-Zc-CK4"/>
+                                                                <constraint firstAttribute="width" constant="110" id="bDx-Op-y84"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="110" id="LpB-Zc-CK4"/>
-                                                        <constraint firstAttribute="width" constant="110" id="bDx-Op-y84"/>
+                                                        <constraint firstItem="TUc-Do-u9r" firstAttribute="top" secondItem="6T4-6f-t2z" secondAttribute="top" id="AW7-9n-nc1"/>
+                                                        <constraint firstAttribute="height" constant="110" id="MNb-3i-Z6U"/>
+                                                        <constraint firstAttribute="width" constant="110" id="Pvy-ph-kqC"/>
+                                                        <constraint firstItem="TUc-Do-u9r" firstAttribute="centerX" secondItem="6T4-6f-t2z" secondAttribute="centerX" id="cj2-Cl-ox1"/>
                                                     </constraints>
-                                                </imageView>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hjd-qg-bp5">
-                                                    <rect key="frame" x="5" y="112" width="130" height="0.0"/>
+                                                    <rect key="frame" x="5" y="130" width="130" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -58,16 +70,18 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Hjd-qg-bp5" firstAttribute="leading" secondItem="qeq-U8-1lb" secondAttribute="leading" constant="5" id="Ej7-R3-VlM"/>
-                                                <constraint firstItem="Hjd-qg-bp5" firstAttribute="top" secondItem="TUc-Do-u9r" secondAttribute="bottom" constant="2" id="OFV-wc-v8b"/>
+                                                <constraint firstItem="Hjd-qg-bp5" firstAttribute="top" secondItem="6T4-6f-t2z" secondAttribute="bottom" constant="10" id="SLg-Y7-YWA"/>
                                                 <constraint firstAttribute="trailing" secondItem="Hjd-qg-bp5" secondAttribute="trailing" constant="5" id="Tk0-YX-l8O"/>
-                                                <constraint firstItem="TUc-Do-u9r" firstAttribute="top" secondItem="qeq-U8-1lb" secondAttribute="top" id="gtK-e1-Hl0"/>
-                                                <constraint firstItem="TUc-Do-u9r" firstAttribute="centerX" secondItem="qeq-U8-1lb" secondAttribute="centerX" id="iCY-0h-Nam"/>
+                                                <constraint firstItem="6T4-6f-t2z" firstAttribute="top" secondItem="qeq-U8-1lb" secondAttribute="top" constant="10" id="g95-xy-jUU"/>
+                                                <constraint firstItem="6T4-6f-t2z" firstAttribute="leading" secondItem="qeq-U8-1lb" secondAttribute="leading" constant="15" id="jUy-0S-mTr"/>
+                                                <constraint firstAttribute="trailing" secondItem="6T4-6f-t2z" secondAttribute="trailing" constant="15" id="uN1-j6-kcZ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="140" height="140"/>
                                         <connections>
                                             <outlet property="imageView" destination="TUc-Do-u9r" id="92q-0y-oMj"/>
                                             <outlet property="nameLabel" destination="Hjd-qg-bp5" id="LVK-KZ-Mbi"/>
+                                            <outlet property="outerView" destination="6T4-6f-t2z" id="gdP-G7-h4x"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
